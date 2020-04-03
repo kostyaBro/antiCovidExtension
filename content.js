@@ -1,7 +1,7 @@
 console.log("AntiCovidExtention was run.");
 
 let covidWords = [
-    "covid", "Covid", "COVID",
+    "covid", "Covid", "COVID", "COVID-19",
     "coronavirus", "Coronavirus", "CORONAVIRUS",
     "коронавирус", "Коронавирус", "КОРОНАВИРУС",
     "коровавирус",
@@ -55,7 +55,9 @@ function covidCleaner() {
     }
 }
 
-setInterval(covidCleaner(), 1000);
+window.setInterval(function() {
+    covidCleaner()
+}, 1000);
 
 // IF I use mutationObserver i lock page and even can't close it.
 

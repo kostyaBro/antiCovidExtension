@@ -1,14 +1,11 @@
 {
     "name": "AntiCovid19",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Antivirus for remove covid-19 from your information life.",
     "content_scripts": [
         {
             "matches": [
-                "https://youtube.com/*",
-                "https://google.com/*",
-                "https://google.ru/*",
-                "https://vk.com/*"
+                "<all_urls>"
             ],
             "js": [
                 "content.js"
