@@ -5,7 +5,15 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "https://*.youtube.com/*",
+                "https://*.google.com/*",
+                "https://*.vk.com/*",
+                "https://*.youtube.ru/*",
+                "https://*.google.ru/*",
+                "https://*.vk.ru/*",
+                "https://youtube.ru/*",
+                "https://google.ru/*",
+                "https://vk.ru/*"
             ],
             "js": [
                 "content.js"
